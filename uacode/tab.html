@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        .tabBox ul {
+            position: relative;
+            top:1px;
+            /* 相对于自己之前的位置向下移动1px,使边框重合 */
+        }
+        .tabBox ul li {
+            /* 行内块 */
+            display: inline-block;
+            /* 在一行显示,又可以设置宽高 */
+            margin-right: 10px;
+            padding: 0 5px;
+            line-height: 33px;
+            border: 1px solid #aaa;
+            cursor: pointer;
+        }
+        .tabBox ul li.active {
+            /* 技巧:当前LI的边框覆盖着DIV的边框,
+            我们让LI的下边框的背景颜色是白色,这样看起来就像没边框了*/
+            color: lightsalmon;
+            font-weight: bold;
+            border-bottom-color: #fff;
+        }
+        .tabBox div {
+            display: none;
+            line-height: 148px;
+            text-align: center;
+            border: 1px solid #aaa;
+        }
+        .tabBox div.active {
+            /* 不加空格是当前元素的二次筛选 */
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="tabBox" class="tabBox">
+        <ul>
+            <li class="active">新闻</li>
+            <li>电影</li>
+            <li>音乐</li>
+        </ul>
+        <div class="active">马龙夺冠</div>
+        <div>白蛇缘起</div>
+        <div>周杰伦:反方向的钟</div>
+    </div>
+</body>
+</html>
+<script src="../js/tab.js"></script>

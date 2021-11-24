@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        .box {
+            margin: 20px auto;
+            width: 300px;
+        }
+        .box li {
+            padding: 0 5px;
+            line-height: 35px;
+            border-bottom: 1px dashed #aaa;
+            cursor: pointer;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .bgColor {
+            border: 1px solid red;
+        }
+        .liColor {
+            background-color: plum;
+        }
+        /* CSS3 */
+        /* li:nth-child(1) 验证机制:获取所有子元素并且第一个是li
+           li:nth-of-type(1) 验证机制:先给当前容器按照某个标签名进行分组,获取分组之中的第1个
+         
+        .box li:nth-of-type(odd){
+            background: plum;
+         }
+        .box li:nth-of-type(even){
+            background: green;
+        } 
+        .box li:hover{
+            background-color: lightblue;
+        }*/
+        .bg0 {
+            background-color: green;
+        }
+        .bg1 {
+            background-color: red;
+        }
+        .bg2 {
+            background-color: blue;
+            border: 1px solid;
+            border-radius: ;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="box" id="box">
+        <li >一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达一次性做好是懒的最好表达一次性做好是懒的最好表达一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+        <li >一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达一次性做好是懒的最好表达一次性做好是懒的最好表达一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+        <li >一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达一次性做好是懒的最好表达一次性做好是懒的最好表达一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+        <li>一次性做好是懒的最好表达</li>
+    </ul>
+</body>
+</html>
+<script src="../js/changColor1.js"></script>
+<!-- <script src="../js/changcolor.js"></script> -->
